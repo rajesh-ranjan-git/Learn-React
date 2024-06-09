@@ -18,7 +18,10 @@ const ListItem = ({ data }) => {
         <div className={"title"}>
           <h3>{data.title}</h3>
         </div>
-        <button className={"cart-add"}>
+        <button
+          className={"cart-add"}
+          onClick={() => console.log("Clicked! ", data)}
+        >
           <span>Add to Cart</span>
           <img src={AddToCartIcon} alt="CartIcon" />
         </button>
