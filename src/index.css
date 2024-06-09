@@ -194,6 +194,40 @@ header {
   display: none;
 }
 
+.subheader-container {
+  position: sticky;
+  z-index: 1024;
+  top: 66px;
+}
+
+.subheader-container ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  background-color: white;
+  box-shadow: 0 15px 10px -15px #1111112b;
+  padding: 0 32px;
+  overflow-x: auto;
+}
+
+.subheader-container ul li a {
+  display: inline-block;
+  padding: 10px 16px;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  transition: background 100ms ease-in-out;
+  white-space: nowrap;
+}
+
+.subheader-container ul li a.active,
+.subheader-container ul li a:hover {
+  background-color: rgb(233, 97, 37);
+  color: #ffffff;
+}
+
 /* Media Queries */
 @media screen and (max-width: 768px) {
   .nav-brand,
@@ -230,5 +264,11 @@ header {
   .searchBox-container form + svg {
     margin-left: auto;
     display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .subheader-container ul {
+    padding: 0 16px;
   }
 }

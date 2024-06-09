@@ -1,11 +1,13 @@
 // import React from "react";
+import Header from "./components/Layout/Header";
+import SubHeader from "./components/Layout/SubHeader";
 import Products from "./components/Products/Products";
-import Header from "./components/Layout/header";
 
 const App = () => {
   return (
     <div>
       <Header />
+      <SubHeader />
       <Products />
     </div>
   );
