@@ -1,25 +1,10 @@
 // import React from "react";
-import ListItem from "./components/ListItem";
+import Products from "./components/Products/Products";
 
 const App = () => {
   return (
-    <div tabIndex="" className="" onClick="">
-      <ListItem
-        data={{
-          discountedPrice: 340,
-          price: 450,
-          title: "Title of the Item",
-          thumbnail: "placeholder.png",
-        }}
-      ></ListItem>
-      <ListItem
-        data={{
-          discountedPrice: 80,
-          price: 100,
-          title: "Title of the Item",
-          thumbnail: "placeholder.png",
-        }}
-      ></ListItem>
+    <div>
+      <Products />
     </div>
   );
 
