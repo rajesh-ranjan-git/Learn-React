@@ -3,7 +3,6 @@
 }
 
 html {
-  // font-family: 'Noto Sans JP', sans-serif;
   font-family: "Doppio One", sans-serif;
 }
 
@@ -22,12 +21,12 @@ body {
   padding: 16px 32px;
   width: 100%;
   min-height: 100vh;
+}
 
-  &--wrapper {
-    display: flex;
-    padding-left: 40px;
-    flex-wrap: wrap;
-  }
+.product-list--wrapper {
+  display: flex;
+  padding-left: 40px;
+  flex-wrap: wrap;
 }
 
 .item-card {
@@ -38,37 +37,36 @@ body {
   padding: 0;
   width: 16.66%;
   margin: 16px;
-  border: 1px solid rgba(black, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 4px;
-
-  &__information {
-    padding: 6px 12px;
-    margin-top: 12px;
-
-    .title {
-      text-overflow: ellipsis;
-      font-size: 14px;
-      color: rgba(black, 0.8);
-      white-space: nowrap;
-      overflow-x: hidden;
-
-      h3 {
-        margin: 8px 0 14px;
-      }
-    }
-  }
 }
 
-.pricing {
-  small {
-    opacity: 0.5;
-    font-weight: 400;
-    margin-left: 8px;
-  }
-  span {
-    font-size: 14px;
-    font-weight: 500;
-  }
+.item-card__information {
+  padding: 6px 12px;
+  margin-top: 12px;
+}
+
+.item-card__information .title {
+  text-overflow: ellipsis;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.8);
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+
+.item-card__information .title h3 {
+  margin: 8px 0 14px;
+}
+
+.pricing small {
+  opacity: 0.5;
+  font-weight: 400;
+  margin-left: 8px;
+}
+
+.pricing span {
+  font-size: 14px;
+  font-weight: 500;
 }
 
 button.cart-add {
@@ -77,12 +75,15 @@ button.cart-add {
   width: 100%;
   background-color: rgb(233, 97, 37);
   border-radius: 0px 0px 4px 4px;
-  border: unset;
+  border: none;
   font-size: 14px;
   padding: 8px 16px;
   color: white;
   display: flex;
   align-items: center;
-  width: 100%;
   justify-content: space-between;
+}
+
+button.cart-add img {
+  width: 1.5rem;
 }
